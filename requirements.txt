@@ -1,0 +1,12 @@
+streamlit
+langchain
+langchain-openai
+pydantic<2
+unstructured
+python-docx
+pdf2image
+unstructured-inference
+pillow
+lxml
+tiktoken
+wikipedia
