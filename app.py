@@ -1,9 +1,11 @@
 import streamlit as st
-from langchain_opanai import ChatOpenAI
+from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.pydantic_v1 import BaseModel, Field
 from typing import List
-
+from langchain.retrievers import WikipediaRetriever
+from langchain.document_loaders import UnstructuredFileLoader
+from langchain.text_splitter import CharacterTextSplitter
 
 # --- 페이지 설정 ---
 st.set_page_config(
